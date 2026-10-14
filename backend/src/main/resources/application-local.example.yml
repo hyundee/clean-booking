@@ -1,0 +1,7 @@
+# 이 파일을 복사해 application-local.yml 을 만들고 비밀번호를 채웁니다
+# application-local.yml 은 git 에 올리지 않습니다
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/clean_booking?serverTimezone=Asia/Seoul&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&useSSL=false
+    username: clean_booking
+    password: 여기에_clean_booking_계정_비밀번호

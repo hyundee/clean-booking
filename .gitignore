@@ -1,0 +1,12 @@
+# 로컬 비밀값
+backend/src/main/resources/application-local.yml
+frontend/.env.local
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
