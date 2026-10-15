@@ -88,7 +88,7 @@
   - 결정: 로컬 프로필은 IntelliJ 설정 대신 `application.yml`의 `spring.profiles.active: ${SPRING_PROFILES_ACTIVE:local}` 기본값으로 켬
   - 결정: 확인용 `GET /api/ping`은 `pong`과 DB `NOW()`를 돌려줌. 프론트 템플릿은 React 19, Vite 8, TypeScript 6
   - 주의: Claude가 `gradlew`를 실행할 때는 항상 `--no-daemon`을 붙임. Claude 실행 환경에서 뜬 데몬이 남으면 사용자 터미널 빌드가 그 데몬을 재사용해 엉뚱한 오류를 낼 수 있음
-- [ ] **3. 스키마와 기초 데이터**: Flyway `V1__init.sql`(SPEC 4장 그대로), `V2__seed.sql`. `ddl-auto: validate`
+- [x] **3. 스키마와 기초 데이터**: Flyway `V1__init.sql`(SPEC 4장 그대로), `V2__seed.sql`. `ddl-auto: validate`
   - 완료 기준: 앱을 띄우면 DBeaver에서 테이블과 기초 데이터가 보이고 `flyway_schema_history`에 두 줄이 있음
 - [ ] **4. 공통 기반**: `BaseTimeEntity`, JPA Auditing, `ErrorCode`·`BusinessException`·`GlobalExceptionHandler`, 페이지 응답 DTO
   - 완료 기준: 일부러 예외를 던지는 임시 API가 SPEC 형식의 JSON 에러를 응답함. 확인 후 임시 API 삭제
